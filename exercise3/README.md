@@ -2,7 +2,7 @@
 ### Desenvolvimento Mobile
 Professores: Robson Fernandes e Wallace Henrique
 
-*IONIC - Exercício de event binding 
+*IONIC - Exercício de event binding* 
 
 - Criar um novo projeto do tipo sidemenu chamado Exercicio3.
 - Criar uma página chamada “news”.
