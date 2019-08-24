@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Dados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img [src]="caminho">
+  <ul>
+    <li>
+      <strong>Nome: </strong> 
+      {{user.nome}}
+    </li>
+    <li>
+      <strong>Idade: </strong> 
+      {{user.idade}}
+    </li>
+    <li>
+      <strong>Telefone: </strong> 
+      {{user.telefone}}
+    </li>
+    <li>
+      <strong>E-mail: </strong> 
+      {{user.email}}
+    </li>
+  </ul>
+</ion-content>

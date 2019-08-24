@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>news</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img [src]="image">
+      <ion-card-subtitle>{{ card.subtitle }}</ion-card-subtitle>
+      <ion-card-title>{{ card.title }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ card.content }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
