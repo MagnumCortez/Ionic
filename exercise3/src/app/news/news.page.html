@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="stacked">Título</ion-label>
+      <ion-input type="text" [(ngModel)]="formData.title" name="title" placeholder="digite um título"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="stacked">Subtítulo:</ion-label>
+      <ion-input type="text" [(ngModel)]="formData.subtitle" name="subtitle" placeholder="digite um subtítulo"></ion-input>
+    </ion-item>
+    
+    <ion-button color="primary" (click)="addItem(formData)">Cadastrar</ion-button>
+  </form>
+
+  <ion-list *ngIf="list.length > 0">
+    <h3 text-center>Lista de títulos</h3>
+    
+    <ion-item *ngFor="let item of list">
+      <ion-avatar slot="start" class="ios hydrated">
+        <img src="./assets/icon/favicon.png/">
+      </ion-avatar>
+      <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.subtitle }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>  
+</ion-content>
