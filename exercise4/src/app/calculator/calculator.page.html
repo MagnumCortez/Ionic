@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label></ion-label>
+      <ion-input style="font-size: 54px; font-weight: bold;" type="text" placeholder="0" name="display" [(ngModel)]="resultado"></ion-input>
+    </ion-item>
+  </form>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-button expand="full" color="warning" (click)="calculate('AC')"><strong>AC</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="success" (click)="calculate('%')"><strong>%</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="success" (click)="calculate('/')"><strong>/</strong></ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('7')"><strong>7</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('8')"><strong>8</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('9')"><strong>9</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="success" (click)="calculate('*')"><strong>X</strong></ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('4')"><strong>4</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('5')"><strong>5</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('6')"><strong>6</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="success" (click)="calculate('-')"><strong>-</strong></ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('1')"><strong>1</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('2')"><strong>2</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('3')"><strong>3</strong></ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="success" (click)="calculate('+')"><strong>+</strong></ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('0')"> 0 </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" (click)="calculate('.')"><strong>.</strong></ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button expand="full" color="danger" (click)="calculate('=')"> = </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
